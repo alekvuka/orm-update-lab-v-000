@@ -36,7 +36,6 @@ class Student
         SQL
         DEB[:conn].execute(sql, self.name, self.grade, self.id)
 
-
       else
       sql = <<-SQL
 
