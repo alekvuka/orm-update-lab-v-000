@@ -34,7 +34,7 @@ class Student
         sql = <<-SQL
         UPDATE students SET name = ?, grade = ? WHERE id = ?
         SQL
-        DEB[:conn].execute(sql, @name, @grade, @id)
+        DEB[:conn].execute(sql, self.name, self.grade, self.id)
 
 
       else
