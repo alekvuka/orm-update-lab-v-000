@@ -32,7 +32,9 @@ class Student
     def save
       if self.id
         sql = <<-SQL
-        CREATE 
+        UPDATE students SET name = ?, grade = ? WHERE id = ?
+        SQL
+        DEB[:conn].execute(sql, @name, @grade, @id)
 
 
       else
