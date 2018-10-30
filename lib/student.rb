@@ -46,8 +46,8 @@ class Student
       end
     end
 
-    def self.create(name, grade) 
-      students = Student.new
+    def self.create(:name, :grade) 
+      students = Student.new(name, grade)
 
     end
 
