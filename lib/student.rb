@@ -31,7 +31,8 @@ class Student
 
     def save
       if self.id
-        
+        sql = <<-SQL
+        CREATE 
 
 
       else
